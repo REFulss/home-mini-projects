@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BRONZE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="CSS/bronzeStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <div class="header">
+            <ul class="objects">
+                <li onclick="location.href='#'">SPEAKERS</li>
+                <li onclick="location.href='#'">HEADPHONES</li>
+                <li onclick="location.href='#'">TELEVISIONS</li>
+                <li onclick="location.href='#'">ACCESSORIES</li>
+                <li onclick="location.href='#'">FIND STORE</li>
+                <li onclick="location.href='#'">EXPLORE</li>
+            </ul>
+        </div>
+        
+        <div class="title">
+            <h4>
+                <span>B R</span>
+                <span>O N</span>
+                <span>Z E</span>
+            </h4>
+        </div>
+        
+        <div class="container">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+            <div class="circle-5"></div>
+            <div class="circle-6"></div>
+            <div class="circle-7"></div>
+            <div class="circle-7"></div>
+            <div class="circle-8"></div>
+            <div class="circle-9"></div>
+            <div class="circle-10"></div>
+            <div class="circle-11"></div>
+            <div class="circle-12"></div>
+            <div class="circle-13"></div>
+            <div class="circle-14"></div>
+            <div class="circle-15"></div>
+            <div class="circle-16"></div>
+            <div class="circle-17"></div>
+            <div class="circle-17"></div>
+            <div class="circle-18"></div>
+            <div class="circle-19"></div>
+            <div class="circle-20"></div>
+            <div class="circle-21"></div>
+            <div class="circle-22"></div>
+            <div class="circle-23"></div>
+            <div class="circle-24"></div>
+            <div class="circle-25"></div>
+            <div class="circle-26"></div>
+        </div>
+        
+        <script>
+            var init_px = 400;
+            var init_deg = 135;
+            var px = 30;
+            var deg = 360;
+            
+            $(document).ready(function() {
+                for (var i = 1; i < $(".container").children().length; i++) {
+                    $(".circle-" + i).css({
+                        "width" : (init_px + (i*px-px)) + "px",
+                        "height" : (init_px + (i*px-px)) + "px",
+                        "transform" : "rotate(" + (init_deg + (i*deg-deg)) + "deg)"
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

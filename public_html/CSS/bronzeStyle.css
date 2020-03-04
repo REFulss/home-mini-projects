@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 4, 2020, 7:24:47 PM
+    Author     : Roberts
+*/
+
+* {
+                margin: 0;
+                padding: 0;
+                
+                overflow: hidden;
+            }
+            
+            body {
+                background-color: #372C2E;
+            }
+            
+            .header {
+                vertical-align: top;
+                width: 100%;
+                min-height: 50px;
+                max-height: 50px;
+                
+                border: 1px solid #ffffff;
+                border-top: transparent;
+                border-left: transparent;
+                border-right: transparent;
+                opacity: 0.8;
+            }
+            
+            .header:hover {
+                opacity: 1.0;
+            }
+            
+            .objects {
+                display: grid;
+                grid-template-columns: repeat(5, 100px);
+                
+                list-style-type: none;
+                color: #ffffff;
+                opacity: 0.8;
+                font-family: 'Quicksand', sans-serif;
+                
+                display: flex;
+                justify-content: space-evenly;
+                
+                padding: 15px;
+            }
+            
+            .container * {
+                display: grid;
+                /*grid-template-columns: repeat(5, 100px);*/
+                
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                
+                background-color: transparent;
+                
+                border: 2px solid #DE9E48;
+                
+                border-right: 2px solid transparent;
+                /*border-left: 2px transparent;*/
+                /*border-bottom: 2px solid transparent;*/
+                border-top: 2px transparent;
+                
+                border-radius: 50%;
+            }
+            
+            .title {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                
+                font-family: 'Work Sans', sans-serif;
+                font-weight: bold;
+                font-size: 125pt;
+                
+                color: #ffffff;
+                opacity: 0.9;
+                
+                padding-top: 600px;
+                padding-right: 750px;
+                
+                text-shadow: 2px 2px 5px #DE9E48;
+            }
+            
+            h4 span {
+                display: block;
+            }
