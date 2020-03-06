@@ -9,6 +9,7 @@ and open the template in the editor.
 */
 
 body {
+    position: relative;
     overflow: hidden;
 }
 
@@ -23,14 +24,6 @@ body {
 	transform: translate(-50%, -50%) rotate(0deg);
 	animation: rotate 20s linear infinite;
 	filter: blur(10px) contrast(15);
-}
-@keyframes rotate {
-	from {
-		transform: translate(-50%, 50%) rotate(0deg);
-	}
-	to {
-		transform: translate(-50%, 50%) rotate(360deg);
-	}
 }
 
 .particle{
@@ -47,22 +40,8 @@ body {
 .particle:nth-child(odd) {
 	animation: pulse 2.3s ease-in-out infinite;
 }
-@keyframes pulse {
-	0% { transform: scale(1) }
-	50% { transform: scale(1.9) }
-	70% { transform: scale(0.6) }
-	100% { transform: scale(1) }
-}
 .leftspin{
 	animation: leftSpin 4.5s linear infinite;
-}
-@keyframes leftSpin {
-	from {
-		transform: rotate(0deg) translateX(50px);
-	}
-	to {
-		transform: rotate(360deg) translateX(50px);
-	}
 }
 .rightspin {
 	animation: rightSpin 4s linear infinite;
@@ -76,3 +55,26 @@ body {
 	}
 }
 
+@keyframes leftSpin {
+	from {
+		transform: rotate(0deg) translateX(50px);
+	}
+	to {
+		transform: rotate(360deg) translateX(50px);
+	}
+}
+@keyframes pulse {
+	0% { transform: scale(1) }
+	50% { transform: scale(1.9) }
+	70% { transform: scale(0.6) }
+	100% { transform: scale(1) }
+}
+
+@keyframes rotate {
+	from {
+		transform: translate(-50%, 50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, 50%) rotate(360deg);
+	}
+}
